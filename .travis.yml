@@ -1,0 +1,16 @@
+  language: python
+  os:
+    - linux
+  cache: pip
+  python:
+    - 3.6
+  services:
+    - redis-server
+  install:
+    - pip install -r requirements.txt
+    - pip install codecov
+    - pip install -e .[test]
+  script:
+    - pytest
+  after_script:
+    - codecov
