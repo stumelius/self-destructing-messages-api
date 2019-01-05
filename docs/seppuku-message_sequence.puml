@@ -1,0 +1,11 @@
+@startuml
+
+title /api/v1/seppuku-message
+
+User -> API: HTTP POST request {"value": "Hello, world!", "expire": 600}
+API --> User: HTTP response {"key": <uuid4>}
+
+
+User -> API: HTTP GET request {"key": <uuid4>}
+User <-- API: HTTP response {"value": "Hello, world!"}
+@enduml
