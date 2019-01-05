@@ -27,6 +27,7 @@ setup(
         'test': ['pytest', 'pytest-cov', 'pytest-flask', 'pytest-env'],
         'docs': []
     },
+    scripts=['serve_api.py'],
     entry_points={
         'console_scripts': [],
     },
