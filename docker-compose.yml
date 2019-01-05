@@ -1,0 +1,21 @@
+# See https://docs.docker.com/compose/compose-file/compose-file-v2/
+version: '3'
+volumes:
+  redis-data:
+services:
+  redis:
+    image: redis
+    restart: always
+    volumes:
+      - redis-data:/data
+  seppuku-api:
+    build: .
+    restart: always
+    environment:
+      - REDIS_HOSTNAME=redis
+      - REDIS_PORT=6379
+    depends_on:
+      - redis
+    ports:
+      - 5002:5002
+    command: serve_api.py
