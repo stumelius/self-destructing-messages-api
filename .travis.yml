@@ -12,10 +12,10 @@
     - pip install -r requirements.txt
     - pip install codecov
     - pip install -e .[test]
+  before_script:
+    - docker build -t smomni/seppuku-api .
   script:
     - pytest
-    - docker build -t smomni/seppuku-api .
-    - docker run smomni/seppuku-api
   after_script:
     - codecov
     - docker images
