@@ -1,5 +1,15 @@
 import uuid
+import os
 from redis import Redis
+
+
+def get_default_backend() -> Redis:
+    """
+    Return default key-value data store backend.
+
+    :return:
+    """
+    return Redis(host=os.environ['REDIS_HOSTNAME'], port=os.environ['REDIS_PORT'])
 
 
 def write_message(value: str, backend: Redis, expire: int=None) -> str:
@@ -22,6 +32,7 @@ def read_message(key: str, backend: Redis) -> str:
 
     :param key:
     :param backend: key-value store backend (e.g., redis)
+    :raises KeyError: Key does not exist
     :return:
     """
     pipe = backend.pipeline()
@@ -29,5 +40,5 @@ def read_message(key: str, backend: Redis) -> str:
     pipe.delete(key)
     byte_arr, key_was_deleted = pipe.execute()
     if byte_arr is None:
-        raise ValueError('Key does not exist')
+        raise KeyError('Key does not exist')
     return byte_arr.decode()

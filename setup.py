@@ -21,12 +21,13 @@ setup(
         'Programming Language :: Python :: Implementation :: CPython'
     ],
     packages=find_packages(),
-    install_requires=[],
+    install_requires=['redis', 'flask', 'flask-restful'],
     extras_require={
         'dev': [],
-        'test': ['pytest', 'pytest-cov'],
+        'test': ['pytest', 'pytest-cov', 'pytest-flask', 'pytest-env'],
         'docs': []
     },
+    scripts=['serve_seppuku_api.py'],
     entry_points={
         'console_scripts': [],
     },
