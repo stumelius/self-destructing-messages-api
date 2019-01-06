@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/smomni/self-destructing-messages-api.svg?branch=master)](https://travis-ci.org/smomni/self-destructing-messages-api)
 [![codecov](https://codecov.io/gh/smomni/self-destructing-messages-api/branch/master/graph/badge.svg)](https://codecov.io/gh/smomni/self-destructing-messages-api)
 [![Maintainability](https://api.codeclimate.com/v1/badges/34b7685d825a9a9a96a2/maintainability)](https://codeclimate.com/github/smomni/self-destructing-messages-api/maintainability)
+[![Updates](https://pyup.io/repos/github/smomni/self-destructing-messages-api/shield.svg)](https://pyup.io/repos/github/smomni/self-destructing-messages-api/)
 
 # self-destructing-messages-api
 
