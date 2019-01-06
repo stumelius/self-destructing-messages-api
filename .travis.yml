@@ -16,6 +16,11 @@
     - docker build -t smomni/seppuku-api .
   script:
     - pytest
+  deploy:
+    provider: pypi
+    user: "smomni"
+    password:
+      secure: "Qr2WDo1cXoqyDb+0jMIoEmhuKzVr127RogJ0FnjJ4PinS8+5yYRedRmpj/LlwsDeiSkfW6mrzlq4dRbHGtVqOtjkyHVpHyr9KZ9FbEH+x0B2EVAJSKJBxwuMaVqirkQAdBCEO9mNF7EdT1BfQJarqYTbSl7t/0nwvC6rrzZedQo+Ugz79uw45c9tw+b0/6qUmJBkyEGE6s3/jlWUyLGDHrjd+xxjQPdAgspcABryaQYsE7XCKVP0DG6ETxhn9LNbQWHWNZA6I+ztKQwkfYx3989wpy2Gnsmi8jIGT76Q1gike+R0B/nADc2w+qu2q3OGK9F2XLrpZkA/oUUt05SwAzjegpu8PKrsbIzeftEd+s3tJCBSGkxali4ZOtrq17zISIxnIkeLCOAiRz9zdC8PR6j3cYn0GJYmrYALFtfLfu13R5JmPSfoC9mRQ6OzdT9zoRUjOsvtorE8Ji753id7jnVB2hsoK6hCre7uswfvXvtDs69lUFRd4wNirpAJiVxZGiPv+eLAi4SEB35sgTLXxSKozMPvDz8bjvWpoPOh14OWMnqDjsYNEWwkA8yN3fZSVdif6Awb7D3vV0SMKkbHOvw8QCUKt7AjnWHxv/Xm1t5GJ5T7Yb/UpUDTOkYuZpBrLZWhmWYZN/2zOq8DoPZrCcQ+LMopbPYoWdExF2Wtt/E="
   after_script:
     - codecov
     - docker images
