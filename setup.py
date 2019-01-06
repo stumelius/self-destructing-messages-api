@@ -27,7 +27,7 @@ setup(
         'test': ['pytest', 'pytest-cov', 'pytest-flask', 'pytest-env'],
         'docs': []
     },
-    scripts=['serve_api.py'],
+    scripts=['serve_seppuku_api.py'],
     entry_points={
         'console_scripts': [],
     },

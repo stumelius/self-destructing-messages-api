@@ -6,3 +6,5 @@ RUN pip install -r requirements.txt && \
     pip install -e .[test]
 
 EXPOSE 5002
+
+CMD ["serve_seppuku_api.py"]

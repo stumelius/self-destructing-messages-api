@@ -18,7 +18,7 @@ docker run -p 6379:6379 -d redis
 Next, start the API server:
 
 ```bash
-serve_api.py -e REDIS_HOSTNAME=localhost REDIS_PORT=6379
+serve_seppuku_api.py -e REDIS_HOSTNAME=localhost REDIS_PORT=6379
 ```
 
 Send message "foo" with a 600-second auto-expiry timer as a `POST` request:
