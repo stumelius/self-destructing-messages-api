@@ -5,7 +5,7 @@ Click==7.0
 colorama==0.4.3
 coverage==5.0.3
 Flask==1.1.1
-Flask-RESTful==0.3.7
+Flask-RESTful==0.3.8
 itsdangerous==1.1.0
 Jinja2==2.10
 MarkupSafe==1.1.0
