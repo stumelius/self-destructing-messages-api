@@ -12,7 +12,7 @@ MarkupSafe==1.1.1
 more-itertools==8.2.0
 pluggy==0.13.1
 py==1.8.1
-pytest==4.0.2
+pytest==5.4.1
 pytest-cov==2.6.0
 pytest-env==0.6.2
 pytest-flask==0.14.0
