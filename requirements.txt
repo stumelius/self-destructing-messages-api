@@ -7,7 +7,7 @@ coverage==4.5.2
 Flask==1.0.2
 Flask-RESTful==0.3.7
 itsdangerous==1.1.0
-Jinja2==2.10
+Jinja2==2.11.3
 MarkupSafe==1.1.0
 more-itertools==5.0.0
 pluggy==0.8.0
