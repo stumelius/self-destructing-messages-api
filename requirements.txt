@@ -15,7 +15,7 @@ py==1.10.0
 pytest==6.2.2
 pytest-cov==2.11.1
 pytest-env==0.6.2
-pytest-flask==0.14.0
+pytest-flask==1.2.0
 pytz==2018.7
 redis==3.0.1
 six==1.12.0
