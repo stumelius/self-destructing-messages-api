@@ -19,4 +19,4 @@ pytest-flask==1.2.0
 pytz==2023.3
 redis==5.0.0
 six==1.16.0
-Werkzeug==0.14.1
+Werkzeug==2.3.7
