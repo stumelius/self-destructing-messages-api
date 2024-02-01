@@ -6,7 +6,7 @@ colorama==0.4.6
 coverage==7.4.1
 Flask==3.0.1
 Flask-RESTful==0.3.10
-itsdangerous==1.1.0
+itsdangerous==2.1.2
 Jinja2==2.10
 MarkupSafe==1.1.0
 more-itertools==5.0.0
