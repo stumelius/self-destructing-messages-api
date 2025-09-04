@@ -2,7 +2,7 @@ aniso8601==10.0.1
 atomicwrites==1.4.1
 attrs==25.3.0
 Click==8.2.2
-colorama==0.4.1
+colorama==0.4.6
 coverage==4.5.2
 Flask==1.0.2
 Flask-RESTful==0.3.7
