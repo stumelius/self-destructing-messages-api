@@ -10,7 +10,7 @@ itsdangerous==2.2.0
 Jinja2==3.1.6
 MarkupSafe==3.0.3
 more-itertools==11.0.2
-pluggy==0.8.0
+pluggy==1.6.0
 py==1.7.0
 pytest==4.0.2
 pytest-cov==2.6.0
